@@ -4,7 +4,7 @@ const { MongoClient, ObjectId } = require('mongodb');
 const nodemailer = require('nodemailer');
 require('dotenv').config();
 
-const url = process.env.Mongo_URL;
+const url = process.env.MONGO_URL;
 const client = new MongoClient(url, { useNewUrlParser: true, useUnifiedTopology: true });
 const dbName = 'HaemoShare-Blood';
 
